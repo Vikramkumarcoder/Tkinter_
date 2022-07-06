@@ -1,0 +1,14 @@
+
+Name: Manish Kumar
+Gender: Female
+Father Name: Jagdish
+Mother Name: sheela
+Age: 19
+Address: Mehsi
+
+Name: Manish Kumar
+Gender: Female
+Father Name: Jagdish
+Mother Name: sheela
+Age: 19
+Address: Mehsi

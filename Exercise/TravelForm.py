@@ -1,7 +1,7 @@
 from tkinter import *
 
 root = Tk()
-root.geometry("655x333")
+root.geometry("550x280")
 root.title("Travel Form")
 
 def store():
@@ -18,14 +18,14 @@ def store():
 
 
 # Label welcome banner
-Label(root, text="Welcome to Vikram Airline", font="comicsansms 25 bold").grid(row=0, column=1)
+Label(root, text="Welcome to Vikram Airline", font="comicsansms 20 bold", pady=10).grid(row=0, column=3)
 
 # Text LABELING AND GRIDING
-name = Label(root, text="Name", font="comicsansms 15 bold").grid(row=1, column=0)
-phone = Label(root, text="Phone", font="comicsansms 15 bold").grid(row=2, column=0)
-gender = Label(root, text="Gender", font="comicsansms 15 bold").grid(row=3, column=0)
-emergency = Label(root, text="Emergency contacts", font="comicsansms 15 bold").grid(row=4, column=0)
-paymentmode = Label(root, text="Payment Mode", font="comicsansms 15 bold").grid(row=5, column=0)
+name = Label(root, text="Name", font="comicsansms 10 bold").grid(row=1, column=2)
+phone = Label(root, text="Phone", font="comicsansms 10 bold").grid(row=2, column=2)
+gender = Label(root, text="Gender", font="comicsansms 10 bold").grid(row=3, column=2)
+emergency = Label(root, text="Emergency contacts", font="comicsansms 10 bold").grid(row=4, column=2)
+paymentmode = Label(root, text="Payment Mode", font="comicsansms 10 bold").grid(row=5, column=2)
 
 # Entry variables of respective texts
 namevar = StringVar()
@@ -36,16 +36,16 @@ paymentmodevar = StringVar()
 checkboxvar = IntVar()
 
 # Entries and pack with grid
-nameentry = Entry(root, textvariable=namevar).grid(row=1, column=1)
-pnoneentry = Entry(root, textvariable=phonevar).grid(row=2, column=1)
-genderentry = Entry(root,textvariable=gendervar).grid(row=3, column=1)
-emergencyentry = Entry(root, textvariable=emergencyvar).grid(row=4, column=1)
-paymentmodeentry = Entry(root, textvariable=paymentmodevar).grid(row=5, column=1)
+nameentry = Entry(root, textvariable=namevar).grid(row=1, column=3)
+pnoneentry = Entry(root, textvariable=phonevar).grid(row=2, column=3)
+genderentry = Entry(root,textvariable=gendervar).grid(row=3, column=3)
+emergencyentry = Entry(root, textvariable=emergencyvar).grid(row=4, column=3)
+paymentmodeentry = Entry(root, textvariable=paymentmodevar).grid(row=5, column=3)
 
 # Check Box
-Checkbutton(root, text="Do you want meals", variable=checkboxvar,font="comicsansms 15 bold").grid(row=6, column=1)
+Checkbutton(root, text="Do you want meals", variable=checkboxvar,font="comicsansms 15 bold").grid(row=6, column=3)
 
 #Sumit Button
-Button(root, text="Sumit",font="comicsansms 15 bold", command=store).grid(row=7, column=1)
+Button(root, text="Sumit",font="comicsansms 15 bold", command=store).grid(row=7, column=3)
 
 root.mainloop()

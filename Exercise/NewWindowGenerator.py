@@ -5,7 +5,15 @@ root = Tk()
 root.title("Window Generator")
 
 def NewGUI():
-    root.geometry(f"{widthvar.get()}x{heightvar.get()}")
+    root = Tk()
+    
+    root.title("New Window")
+    canvas_width = widthvar.get()
+    canvas_height = heightvar.get()
+    root.geometry(f"{canvas_width}x{canvas_height}")
+    Label(root, text="This is Your desire Window").pack(pady=25)
+
+    root.mainloop()
 
 canvas_width = 500
 canvas_height = 150

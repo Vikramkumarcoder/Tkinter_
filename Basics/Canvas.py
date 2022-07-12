@@ -28,7 +28,7 @@ can_widget.create_polygon(100, 100, 300, 100, 400, 300, 300, 500, 100, 300, fill
 
 
 """Create text with coordinates x1,y1."""
-can_widget.create_text(390, 200, text="This is sample text", fill="purple", font=("helvetica 35 bold"))
+can_widget.create_text(390, 200, text="This is sample text", fill="purple", font=("Helvetica 35 bold"))
 
 
 root.mainloop()

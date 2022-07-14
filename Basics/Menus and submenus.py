@@ -1,5 +1,3 @@
-#pylint:disable=W0105
-#pylint:disable=W0401
 from tkinter import *
 
 root = Tk()

@@ -1,4 +1,3 @@
-#pylint:disable=W0401
 #Sliders
 
 from tkinter import *
